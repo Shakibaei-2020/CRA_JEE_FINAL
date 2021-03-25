@@ -1,0 +1,40 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p>Actions Collaborateur</p>
+
+
+
+
+<from methode ="post" action="bonjour">
+
+<p>Nom collab</p>
+<label for="societeColl"></label>
+<input type="text" name="nomColl" id="nomColl"/>
+
+<p>societe collab</p>
+<label for="societeColl"></label>
+<input type="text" name="societeColl" id="societeColl"/>
+
+<p>poste collab</p>
+<label for="posteColl"></label>
+<input type="text" name="posteColl" id="posteColl"/>
+<br>
+<br>
+
+<input type="submit" value="Ajouter Collab"/>
+</from>
+
+        <c:if test="${ !empty nomColl }"><p><c:out value="Bonjour, vous vous appelez ${ nomColl }" /></p></c:if>
+
+
+
+
+</body>
+</html>
