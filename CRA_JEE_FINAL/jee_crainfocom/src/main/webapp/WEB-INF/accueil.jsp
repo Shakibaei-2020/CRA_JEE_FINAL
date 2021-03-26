@@ -11,7 +11,9 @@
 <center><h1>Actions Collaborateur</h1></center>
 
 <h2>Ajout collab</h2>
- <form method="post" action="accueil">
+
+ <form method="post" action="/test">
+ 
             <label for="nomColl">Nom : </label>
             <input type="text" name="nomColl" id="nomColl" />
             
@@ -25,7 +27,7 @@
         </form>
         
 <c:if test="${ !empty nomColl }"><p><c:out value="Bonjour, vous vous appelez ${ nomColl } vous etes ${ posteColl }  chez ${ societeColl } " /></p></c:if>
-
+<c:if test="${ !empty nomColl }"><p><c:out value=" essaie ${ testee }"/></p></c:if>
 
  <h2>Supprimer collab</h2>
 

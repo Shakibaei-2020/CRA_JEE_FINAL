@@ -1,8 +1,10 @@
 package com.infocom.model;
 
+import java.sql.SQLException;
+
 import com.infocom.model.DAO.CollaborateurDAO;
 
-public class Collaborateur extends CollaborateurDAO {
+public class Collaborateur{
 	
 	private int idColl;
 	private String nomColl;
@@ -50,10 +52,13 @@ public class Collaborateur extends CollaborateurDAO {
 		 return this.posteColl = posteColl;
 	 }
 
+	 
+	 
 	@Override
 	public String toString() {
 		return "Collaborateur [idColl=" + idColl + ", nomColl=" + nomColl + ", societeColl=" + societeColl
 				+ ", posteColl=" + posteColl + "]";
 	}
 
+	
 }

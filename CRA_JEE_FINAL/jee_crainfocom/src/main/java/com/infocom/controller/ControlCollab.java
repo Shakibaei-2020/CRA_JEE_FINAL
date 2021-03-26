@@ -14,7 +14,7 @@ import com.infocom.model.Collaborateur;
 import com.infocom.model.DAO.CollaborateurDAO;
 
 
-@WebServlet("/accueil")
+@WebServlet("/test")
 public class ControlCollab extends HttpServlet {
     private static final long serialVersionUID = 1L;
        
@@ -27,12 +27,14 @@ public class ControlCollab extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         this.getServletContext().getRequestDispatcher("/WEB-INF/accueil.jsp").forward(request, response);
-        
+          
 }
         
-
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.print("1");
 
+		/**
         String nomColl =request.getParameter("nomColl");
         String societeColl =request.getParameter("societeColl");
         String posteColl =request.getParameter("posteColl");
@@ -40,19 +42,32 @@ public class ControlCollab extends HttpServlet {
         request.setAttribute("nomColl", nomColl);
         request.setAttribute("societeColl", societeColl);
         request.setAttribute("posteColl", posteColl);
-        
+        **/
+        System.out.print("2");
        
-        CollaborateurDAO d = new CollaborateurDAO();
         Collaborateur p = new Collaborateur(5,nomColl,societeColl,posteColl);
-        
+        CollaborateurDAO d = new CollaborateurDAO();
 
        
-        try {
-			d.insertCollab(p);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		System.out.print("3");
+
+			try {
+				System.out.print("avant insert");
+				d.insertCollab(p);
+				System.out.print("apres insert");
+
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				System.out.print("avant stc");
+
+				e.printStackTrace();
+				System.out.print("apres stc");
+
+			}
+			
+			
+			d.selectCollab(1);
+	        request.setAttribute("testee", d);
 
 
         

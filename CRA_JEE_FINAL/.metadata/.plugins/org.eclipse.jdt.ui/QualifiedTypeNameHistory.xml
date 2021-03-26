@@ -5,9 +5,11 @@
     <fullyQualifiedTypeName name="com.infocom.model.util.DBUtil"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
-    <fullyQualifiedTypeName name="com.infocom.model.Collaborateur"/>
     <fullyQualifiedTypeName name="com.infocom.model.NoteDeFrais"/>
     <fullyQualifiedTypeName name="com.infocom.model.DAO.NoteDeFraisDAO"/>
     <fullyQualifiedTypeName name="com.infocom.model.DAO.CollaborateurDAO"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.infocom.model.Collaborateur"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.io.Console"/>
 </qualifiedTypeNameHistroy>
