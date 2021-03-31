@@ -1,0 +1,65 @@
+package com.infocom.controller.Collaborateur;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.infocom.model.Collaborateur;
+import com.infocom.model.DAO.CollaborateurDAO;
+
+/**
+ * Servlet implementation class ControlSupprCollab
+ */
+@WebServlet("/SupprCollab")
+public class SupprCollab extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    public SupprCollab() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		CollaborateurDAO p = new CollaborateurDAO();
+		List < Collaborateur > tabCollab = new ArrayList <Collaborateur>(); 
+		try {
+			tabCollab = p.selectAllCollab();
+		} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+		}
+		request.setAttribute("tabCollab",tabCollab);
+		System.out.println(tabCollab);
+
+	this.getServletContext().getRequestDispatcher("/WEB-INF/accueil.jsp").forward(request, response);	
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+        String nomColl =request.getParameter("nomColl");
+        request.setAttribute("nomColl", nomColl);
+        
+        
+        Collaborateur p = new Collaborateur();
+        CollaborateurDAO d = new CollaborateurDAO();
+        
+        try {
+			d.deleteCollab(1);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+    this.getServletContext().getRequestDispatcher("/WEB-INF/accueil.jsp").forward(request, response);
+
+	}
+
+}
