@@ -1,0 +1,56 @@
+package com.infocom.controller.Collaborateur;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.infocom.model.Collaborateur;
+import com.infocom.model.DAO.CollaborateurDAO;
+import com.infocom.model.DAO.ConnexionDAO;
+
+
+@WebServlet("/ControleConnexion")
+public class ControleConnexion extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+     
+    public ControleConnexion() {
+        super();
+    }
+
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+		
+		
+		 String mailCo =request.getParameter("mailCo");
+	     String mdpCo =request.getParameter("mdpCo");
+	     
+	     request.setAttribute("mailCo", mailCo);
+	     request.setAttribute("mdpCo", mdpCo);
+	    
+	    Collaborateur jean = new Collaborateur();
+		CollaborateurDAO connect = new CollaborateurDAO();
+		
+		
+		String mail = connect.ConnectCollab(mailCo).getMail();
+		String mdp = connect.ConnectCollab(mailCo).getMdp();
+		boolean type = connect.ConnectCollab(mailCo).getType();
+		
+		if(mail == mailCo && mdp == mdpCo && type == false){
+	        this.getServletContext().getRequestDispatcher("/WEB-INF/AccueilGestionFrais.jsp").forward(request, response);
+
+		}else {
+	        this.getServletContext().getRequestDispatcher("/WEB-INF/accueil.jsp").forward(request, response);
+
+		}
+	}
+
+}

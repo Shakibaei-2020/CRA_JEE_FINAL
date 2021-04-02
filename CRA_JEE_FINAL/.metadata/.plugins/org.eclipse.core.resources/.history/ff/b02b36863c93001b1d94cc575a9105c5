@@ -1,0 +1,92 @@
+package com.infocom.model;
+
+import java.sql.SQLException;
+
+import com.infocom.model.DAO.orateurDAO;
+
+public class orateur{
+	
+	private int id;
+	private String nom;
+	private String societe;
+	private String poste;
+	private String mail;
+	private String mdp;
+	private boolean type;
+	
+	public orateur() {}
+	
+	public orateur( int id, String nom, String societe, String poste,String mail,String mdp, ) {
+        	this.id = id;
+			this.nom = nom;
+	        this.societe = societe;
+	        this.poste = poste;
+	        this.
+	 }
+	
+	 public int getId() {
+			return id;
+	 }
+	 
+	 public int setId(int id) {
+			return this.id = id;
+	 }
+	 
+	 public String getnom() {
+		 return nom;
+	 }
+	 
+	 public String setnom(String nom) {
+		 return this.nom = nom;
+	 }
+	
+	 public String getsociete() {
+		 return societe;
+	 }
+	 
+	 public String setsociete(String societe) {
+		 return this.societe = societe;
+	 }
+	 
+	 public String getposte() {
+		 return poste;
+	 }
+	 
+	 public String setpost(String poste) {
+		 return this.poste = poste;
+	 }
+	 
+	 private String getMail() {
+		 return mail;
+	 }
+	 
+	 private String setMail(String mail) {
+		 return this.mail = mail;
+	 }
+	 
+	 private String getMdp() {
+		 return mdp;
+	 }
+	 
+	 private String setMdp(String mdp) {
+		 return this.mdp = mdp;
+	 }
+	 
+	 
+	 private boolean setAdmin() {
+		 return this.type = true;
+	 }
+	 
+	 private boolean getType() {
+		 return type;
+	 }
+	 
+	 private boolean setIterne() {
+		 return this.type = false;
+	 }
+	 
+	
+	
+
+	
+}

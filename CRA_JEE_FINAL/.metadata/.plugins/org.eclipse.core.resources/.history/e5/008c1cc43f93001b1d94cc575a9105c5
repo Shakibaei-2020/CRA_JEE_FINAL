@@ -1,0 +1,5 @@
+package com.infocom.model.DAO;
+
+public class ConnexionDAO {
+
+}
