@@ -1,9 +1,0 @@
-INDEX VERSION 1.131
-C:\Users\mrshakibaei\Desktop\CRA_JEE_FINAL\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\132687477.index
-\jee_crainfocom\src\main\java
-C:\Users\mrshakibaei\Desktop\CRA_JEE_FINAL\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4234943448.index
-\crainfocom\src\main\java
-C:\Users\mrshakibaei\Desktop\CRA_JEE_FINAL\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2037747055.index
-\jee_crainfocom\src\main\java
-C:\Users\mrshakibaei\Desktop\CRA_JEE_FINAL\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1617639545.index
-\crainfocom_jee\src\main\java
