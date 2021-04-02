@@ -1,0 +1,89 @@
+package com.infocom.model;
+
+import java.sql.SQLException;
+
+
+public class Collaborateur{
+	
+	private int id;
+	private String nom;
+	private String societe;
+	private String poste;
+	private String mail;
+	private String mdp;
+	private boolean type;
+	
+	public Collaborateur() {}
+	
+	public Collaborateur( int id, String nom, String societe, String poste,String mail,String mdp, boolean type) {
+        	this.id = id;
+			this.nom = nom;
+	        this.societe = societe;
+	        this.poste = poste;
+	        this.mail = mail;
+	        this.mdp = mdp;
+	        this.type = type;
+	 }
+	
+	 public int getId() {
+			return id;
+	 }
+	 
+	 public int setId(int id) {
+			return this.id = id;
+	 }
+	 
+	 public String getNom() {
+		 return nom;
+	 }
+	 
+	 public String setNom(String nom) {
+		 return this.nom = nom;
+	 }
+	
+	 public String getSociete() {
+		 return societe;
+	 }
+	 
+	 public String setSociete(String societe) {
+		 return this.societe = societe;
+	 }
+	 
+	 public String getPoste() {
+		 return poste;
+	 }
+	 
+	 public String setPoste(String poste) {
+		 return this.poste = poste;
+	 }
+	 
+	 public String getMail() {
+		 return mail;
+	 }
+	 
+	 public String setMail(String mail) {
+		 return this.mail = mail;
+	 }
+	 
+	 public String getMdp() {
+		 return mdp;
+	 }
+	 
+	 public String setMdp(String mdp) {
+		 return this.mdp = mdp;
+	 }
+	 
+	 
+	 public boolean setAdmin() {
+		 return this.type = true;
+	 }
+	 
+	 public boolean getType() {
+		 return type;
+	 }
+	 
+	 public boolean setInterne() {
+		 return this.type = false;
+	 }
+	
+}

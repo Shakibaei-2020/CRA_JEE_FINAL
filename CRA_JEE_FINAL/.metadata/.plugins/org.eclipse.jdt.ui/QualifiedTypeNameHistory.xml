@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="com.infocom.model.util.DBUtil"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.io.Console"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.infocom.controller.Collaborateur.SelectAllCollab"/>
+    <fullyQualifiedTypeName name="com.mysql.jdbc.Statement"/>
+    <fullyQualifiedTypeName name="com.infocom.model.DAO.ConnexionDAO"/>
+    <fullyQualifiedTypeName name="com.infocom.model.DAO.CollaborateurDAO"/>
+    <fullyQualifiedTypeName name="com.infocom.model.Collaborateur"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.infocom.model.NoteDeFrais"/>
+    <fullyQualifiedTypeName name="com.infocom.model.DAO.NoteDeFraisDAO"/>
+</qualifiedTypeNameHistroy>

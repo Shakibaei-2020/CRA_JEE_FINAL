@@ -1,0 +1,40 @@
+package com.infocom.model.DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.infocom.model.Collaborateur;
+import com.infocom.model.util.DBUtil;
+import com.mysql.jdbc.Statement;
+
+public class ConnexionDAO {
+
+	private  final String CONNEXION = "SELECT nom,mail FROM collaborateur WHERE nom =? AND mail=?";
+	
+	public Collaborateur selectCollab(String mail) {
+		  Collaborateur Collaborateur = null;
+	        try (Connection connection = DBUtil.getConnection();
+	            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_COLLAB_BY_ID)) {
+	            preparedStatement.setInt(1, idColl);
+	            ResultSet rs = (ResultSet) preparedStatement.executeQuery();
+
+	            while (rs.next()) {
+	                String nomColl = rs.getString("nom_coll");
+	                String societeColl = rs.getString("societe_coll");
+	                String posteColl = rs.getString("poste_coll");
+	                
+	                Collaborateur = new Collaborateur(idColl, societeColl, societeColl, posteColl);
+	                System.out.println(idColl+" "+ nomColl +" "+ societeColl+" "+ posteColl);
+	            }
+	               
+	        } catch (SQLException e) {
+	            System.out.println(e);
+	        }
+	        return Collaborateur;
+	    }
+	
+}

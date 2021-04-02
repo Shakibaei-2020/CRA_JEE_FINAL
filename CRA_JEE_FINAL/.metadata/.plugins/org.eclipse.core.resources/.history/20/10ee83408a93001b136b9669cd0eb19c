@@ -1,0 +1,39 @@
+package com.infocom.model.util;
+
+import java.sql.Connection;
+
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Driver;
+
+
+public class DBUtil {
+	private static final String DB_DRIVER_CLASS="com.mysql.jdbc.Driver";
+	private static final String DB_USERNAME="root";
+	private static final String DB_PASSWORD="";
+	private static final String DB_URL ="jdbc:mysql://localhost:3306/craajeefinal";
+	
+	private static Connection connection = null;
+	// Pourquoi t'as utilisé le static ici ? 
+	
+	/**
+	 * La création des objets de type Connection est couteuse
+	 * est ressources, de ce fait créer une connection à chaque fois qu'on veut intérroger la
+	 * base de données est des mauvaises pratique de la programmation qui influe
+	 * énormément les performances de l'application (temps de réponse, mémoire
+	 * consommée
+	 */
+	
+	static{
+		try {
+			Class.forName(DB_DRIVER_CLASS);
+			connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static Connection getConnection(){
+		return connection;
+	}
+}

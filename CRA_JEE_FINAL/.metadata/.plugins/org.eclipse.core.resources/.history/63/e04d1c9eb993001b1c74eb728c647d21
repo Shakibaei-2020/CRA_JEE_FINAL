@@ -1,0 +1,63 @@
+package com.infocom.controller.Collaborateur;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.infocom.model.Collaborateur;
+import com.infocom.model.DAO.CollaborateurDAO;
+import com.infocom.model.DAO.NoteDeFraisDAO;
+
+
+@WebServlet("/ControleAdminGestionFrais")
+public class ControleAdminGestionFrais extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
+    public ControleAdminGestionFrais() {
+        super();
+    }
+
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		System.out.println("exe DoGet");
+		NoteDeFraisDAO p1 = new NoteDeFraisDAO();
+		List < NoteDeFraisDAO > tabNoteDeFraisDAO = new ArrayList(); 
+		
+		System.out.println("doGet1");
+		try {
+			System.out.println("doGet2");
+			tabNoteDeFraisDAO = p1.selectAllFrais();
+			System.out.println("doGet3");
+
+		} catch (SQLException e) {
+		e.printStackTrace();
+		}
+		
+		request.setAttribute("tabCollab",tabCollab);
+		ArrayList<String> tabNomColl = new ArrayList<String>(); 
+		for (int i = 0; i < tabCollab.size(); i++) {
+			tabNomColl.add(tabCollab.get(i).getNom());	
+		}
+		request.setAttribute("tabNomColl",tabNomColl);
+		
+		
+        this.getServletContext().getRequestDispatcher("/WEB-INF/PageAdminGestionFrais.jsp").forward(request, response);
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        this.getServletContext().getRequestDispatcher("/WEB-INF/PageAdminGestionFrais.jsp").forward(request, response);
+
+	}
+
+}

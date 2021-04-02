@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form method="post" action="Connexion" >
+ 
+            <label for="nomColl">Nom : </label>
+            <input type="text" name="nomColl" id="nomColl" />
+            
+            <label for="societeColl">societe : </label>
+            <input type="text" name="societeColl" id="societeColl" />
+        
+            <label for="posteColl">Poste : </label>
+            <input type="text" name="posteColl" id="posteColl" />
+   
+            <input type="submit" value="Ajout Collab" />
+</form>
+
+
+</body>
+</html>

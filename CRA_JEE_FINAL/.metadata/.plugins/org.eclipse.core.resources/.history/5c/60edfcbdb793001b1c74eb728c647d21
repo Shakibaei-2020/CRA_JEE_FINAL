@@ -1,0 +1,54 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p>page gestion Frais</p>
+
+<!-- ************************************************************************ -->
+
+<p>supprimer</p>
+<form method="post" action=ControleAdminGestionFrais>
+	<select name="saisiNom" id="saisiNom" >
+     	<c:forEach items="${ tabNomColl }" var="tabNomColl" varStatus="status">
+        <p><option><c:out  value="${tabNomColl}"></option></c:out ></p>
+		</c:forEach>
+	</select>
+<input type="submit" value="supprimer collab"/>
+</form>
+
+<!-- ************************************************************************ -->
+
+<p>Maj</p>
+ <form method="post" action="ControleAdminGestionFrais">
+ 
+            <label for="idUp">id : </label>
+            <input type="text" name="idUp" id="idUp" />
+            
+            <label for="nomUp">nom : </label>
+            <input type="text" name="nomUp" id="nomUp" />
+            
+            <label for="mailUp">mail : </label>
+            <input type="text" name="mailUp" id="mailUp" />
+            
+            <label for="mdpUp">mdp: </label>
+            <input type="text" name="mdpUp" id="mdpUp" />
+            
+            <input type="submit" value="Update collab" />    
+</form>
+<!-- ************************************************************************ -->
+
+<p>Check</p>
+
+		<select>
+     	<c:forEach   items="${ tabCollab }" var="tabCollab" varStatus="status">
+        <p> <option method="get" action="ControleAdminGestionCollab"  ><c:out value="${tabCollab}"></option></c:out ></p>
+		</c:forEach>
+		</select>
+
+</body>
+</html>
