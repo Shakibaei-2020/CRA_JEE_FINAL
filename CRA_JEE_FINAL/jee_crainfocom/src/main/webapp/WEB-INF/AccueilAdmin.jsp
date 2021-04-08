@@ -13,7 +13,7 @@
             <input type="submit" value="Gestion collab" />   
                         
 	</form>
-  
+  <br>
  	 <form method="post" action="ControleAdminGestionFrais">
  			<input   type="submit" value="Infos sur les Frais"/>    
  	 </form>

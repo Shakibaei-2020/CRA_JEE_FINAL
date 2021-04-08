@@ -7,8 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p>Interne</p>
-<p>Ajout</p>
+<center><p>Interne</p></center>
+<hr>
+<p>Ajout</p><p> Probleme parse </p>
+
+
 <form method="post" action="ControleInterneGestionFrais" >
  
             <label for="raisonIn">raison : </label>
@@ -18,15 +21,14 @@
             <input type="text" name="prixIn" id="prixlIn" />
         
             <label for="dateIn">date : </label>
-            <input type="text" name="dateIn" id="dateIn" />
-   
-            <input type="submit" value="Ajout note de frais" />
+            <input style="margin: .4rem 0;" type="date" id="dateIn" name="dateIn" value="2018-07-22"  min="2018-01-01" max="2018-12-31">
+            
+   			<label for="idId">idColl : </label>
+            <input type="text" name="idIn" id="idIn" />
+            
+            <input type="submit" name="button_clicked" value="ajoutFrais" />
 </form>
 
-<form method="post" action="ControleAdminGestionCollab" >
-
-            <input type="submit" value="AutrePage" />
-</form>
 
 </body>
 </html>

@@ -3,23 +3,22 @@ package com.infocom.model;
 
 import java.util.Date;
 
-import com.infocom.model.DAO.NoteDeFraisDAO;
-
 public class NoteDeFrais{
 	
 	private int id;
 	private String raison;
 	private double prix;
 	private Date date;
+	private int idColl;
 	
 	public NoteDeFrais() {};
 	
-	public NoteDeFrais(int id, String raison, double prix, Date dateUpp) {
-		super();
+	public NoteDeFrais(int id, String raison, double prix, Date date,  int idColl) {
 		this.id = id;
 		this.raison = raison;
 		this.prix = prix;
-		this.date = dateUpp;
+		this.date = date;
+		this.idColl = idColl;
 	}
 	
 	 public int getId() {
@@ -50,12 +49,22 @@ public class NoteDeFrais{
 	 public Date setDate(Date date) {
 		 return this.date = date;
 	 }
+	 
+	 public int getIdColl() {
+		 return idColl;
+	 }
+	 
+	 public int setIdColl(int idColl) {
+		 return this.idColl = idColl;
+	 }
 
 	@Override
 	public String toString() {
-		return "NoteDeFrais [id=" + id + ", raison=" + raison + ", prix=" + prix
-				+ ", date=" + date + "]";
+		return "NoteDeFrais [id=" + id + ", raison=" + raison + ", prix=" + prix + ", date=" + date + ", idColl="
+				+ idColl + "]";
 	}
+
+	
 	 
 	 
 }

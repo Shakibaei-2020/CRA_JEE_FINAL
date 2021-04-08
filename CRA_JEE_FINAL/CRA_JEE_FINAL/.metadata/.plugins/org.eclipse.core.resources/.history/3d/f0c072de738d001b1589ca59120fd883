@@ -1,0 +1,57 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p>Actions Collaborateur</p>
+
+
+
+
+
+ <form method="post" action="accueil">
+            <label for="nomColl">Nom : </label>
+            <input type="text" name="nomColl" id="nomColl" />
+            
+            <label for="societeColl">societe : </label>
+            <input type="text" name="societeColl" id="societeColl" />
+            
+            <label for="posteColl">Poste : </label>
+            <input type="text" name="posteColl" id="posteColl" />
+     
+            <input type="submit" value="Ajout Collab" />
+        </form>
+        
+        
+    <form method="post" action="">
+         <div class="wet-boew-slideout">
+    <h2>Table des matières</h2>
+    <ul id="list">
+        <li><a href="#">Contexte</a></li>
+        <li><a href="#">Guide infonaute de technologie &mdash; Le processus</a></li>
+        <li><a href="#">Structure et aperçu d'industrie</a></li>
+        <li><a href="http://alpha.gcwwwtemplates.tbs-sct.ircan.gc.ca/theme-clf2-nsi2/slideout-fra.html">Page actuelle</a></li>
+        <li><a href="#">Partenariats</a></li>
+        <li><a href="#">E-commerce</a></li>
+        <li><a href="#">Commercialisation</a></li>
+        <li><a href="#">Productivité</a></li>
+    </ul>
+</div>
+            
+            <input type="submit" value="Supprimer collab" />
+        </form>
+        
+        
+        
+        
+  
+  <c:if test="${ !empty nomColl }"><p><c:out value="Bonjour, vous vous appelez ${ nomColl } vous etes ${ posteColl }  chez ${ societeColl } " /></p></c:if>
+<c:out value=" ${ insert} "/>
+
+
+</body>
+</html>

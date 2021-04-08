@@ -1,22 +1,17 @@
 package com.infocom.controller.Collaborateur;
-
 import java.io.IOException;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.infocom.model.Collaborateur;
 import com.infocom.model.NoteDeFrais;
-import com.infocom.model.DAO.CollaborateurDAO;
 import com.infocom.model.DAO.NoteDeFraisDAO;
 
 
@@ -32,16 +27,11 @@ public class ControleAdminGestionFrais extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		System.out.println("exe DoGet");
-		NoteDeFraisDAO p1 = new NoteDeFraisDAO();
+		NoteDeFraisDAO notedefraisDAO = new NoteDeFraisDAO();
 		List<NoteDeFrais> tabNoteDeFrais = new ArrayList(); 
 		
-		System.out.println("doGet1");
 		try {
-			System.out.println("doGet2");
-			tabNoteDeFrais = p1.selectAllFrais();
-			System.out.println("doGet3");
-
+			tabNoteDeFrais = notedefraisDAO.selectAllFrais();
 		} catch (SQLException e) {
 		e.printStackTrace();
 		}
@@ -60,62 +50,74 @@ public class ControleAdminGestionFrais extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		/**
-		 * SUPPRIMER FRAIS VIA SELECT RAISON
-		 */
+		String buttonClicked = request.getParameter("button_clicked");
 		
-		String saisiRaison = request.getParameter("saisiRaison");
-		request.setAttribute("saisiRaison",saisiRaison);
 		
-         CollaborateurDAO d = new CollaborateurDAO();
-        
-        try {
-			d.deleteCollab(saisiRaison);
-			this.doGet(request, response);
-	        return;
+		if(buttonClicked != null) {
+		switch(buttonClicked) {
+		case"supprimerFrais":
+			
+			String saisiRaison = request.getParameter("saisiRaison");
+			request.setAttribute("saisiRaison",saisiRaison);
+			
+	         NoteDeFraisDAO noteDeFraisDAO = new NoteDeFraisDAO();   
+	         
+	        try {
+	        	noteDeFraisDAO.deleteFrais(saisiRaison);
+				this.doGet(request, response);
+				return;
 
-		} catch (SQLException e) {
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} 
+	        break;
+	        
+		case"updateFrais":
+		
+	        
+	        String idUp = request.getParameter("idUp");
+	        int idUpParsed = Integer.parseInt(idUp);
+	        
+			String raisonUp =request.getParameter("raisonUp");
+	        
+	        String prixUp = request.getParameter("prixUp");
+	        Double prixUpParsed = Double.parseDouble(prixUp);
+	        
+	        String dateUp = request.getParameter("dateUp");
+		        Date date=Date.valueOf(dateUp);
+			     NoteDeFrais notedefrais = new NoteDeFrais(idUpParsed,raisonUp,prixUpParsed,date, 2);
+			     NoteDeFraisDAO notedefraisDAO = new NoteDeFraisDAO();
+			try {
+				notedefraisDAO.updateFrais(notedefrais);
+			} catch (SQLException e1) {
+				e1.printStackTrace();
+			}
+			break;
+			
+		case"showFrais":
+	        String idSho = request.getParameter("idSho");
+	        int idShoInt = Integer.parseInt(idSho);
+	        
+	        
+			NoteDeFraisDAO notedefraisDAOAffiche = new NoteDeFraisDAO();
+			List < NoteDeFrais > tabNot = new ArrayList <NoteDeFrais>(); 
+			
+			
+			try {
+				tabNot = notedefraisDAOAffiche.selectFraisCollab(idShoInt);
+			} catch (SQLException e) {
 			e.printStackTrace();
-		} 
-
-        /**
-         * MAJ FRAIS
-         */
-        
-        
-        int idUp = Integer.parseInt(request.getParameter("idUp"));
-		String raisonUp =request.getParameter("raisonUp");
-        double prixUp = Double.parseDouble(request.getParameter("prixUp"));
-        String dateUp = request.getParameter("PrixUp");
-        
-        
-        request.setAttribute("idUp", idUp);
-        request.setAttribute("raisonUp", raisonUp);
-        request.setAttribute("prixUp", prixUp);
-        request.setAttribute("dateUp", dateUp);
-        
-        Date DateUpp = null;
-        
-		try {
-			DateUpp = new SimpleDateFormat("dd/MM/yyyy").parse(dateUp);
-		} catch (ParseException e1) {
-			e1.printStackTrace();
-		}  
-      
-        NoteDeFrais lanote = new NoteDeFrais(idUp,raisonUp,prixUp,DateUpp);
-        NoteDeFraisDAO lanoteDAO = new NoteDeFraisDAO();
-        
-        try {
-        	lanoteDAO.updateFrais(lanote);
-		} catch (SQLException e) {
-			e.printStackTrace();
+			}
+			request.setAttribute("tabNot",tabNot);
+			break;
 		}
+		
         
-        
-        
-        /**
-         * SHOW FRAIS
-         */
+
+		}
+		
+    	this.doGet(request, response);
+
         this.getServletContext().getRequestDispatcher("/WEB-INF/PageAdminGestionFrais.jsp").forward(request, response);
 
 	}

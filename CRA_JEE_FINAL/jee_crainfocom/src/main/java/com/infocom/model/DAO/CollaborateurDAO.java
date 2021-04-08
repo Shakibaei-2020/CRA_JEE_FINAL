@@ -1,6 +1,7 @@
 package com.infocom.model.DAO;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,52 +9,52 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.infocom.model.Collaborateur;
+import com.infocom.model.NoteDeFrais;
 import com.infocom.model.util.DBUtil;
 
 public class CollaborateurDAO {
 
-	// private final String SELECT_COLLAB_BY_ID = "SELECT
-	// id_coll,nom_coll,societe_coll,poste_coll FROM collaborateur WHERE id_coll
-	// =?";
-	// private final String SELECT_ALL_NOM_COLLAB = "SELECT nom_coll FROM
-	// collaborateur";
-	// private final String DELETE_COLLAB_SQL = "DELETE FROM collaborateur WHERE
-	// id_coll = ?;";
-
+	
 	private final String INSERT_COLLAB_SQL = "INSERT INTO collaborateur (nom,mail,mdp,type) VALUES  (?,?,?,?);";
 
 	public void insertInterne(Collaborateur collaborateur) throws SQLException {
+		
+		PreparedStatement preparedStatement = null;
 		Connection connection = DBUtil.getConnection();
-		PreparedStatement preparedStatement = connection.prepareStatement(INSERT_COLLAB_SQL);
+		preparedStatement = connection.prepareStatement(INSERT_COLLAB_SQL);
 		preparedStatement.setString(1, collaborateur.getNom());
 		preparedStatement.setString(2, collaborateur.getMail());
 		preparedStatement.setString(3, collaborateur.getMdp());
 		preparedStatement.setBoolean(4, false);
 		preparedStatement.executeUpdate();
-		connection.close();
+		
+		preparedStatement.close();
 	}
 
+
 	public void insertAdmin(Collaborateur collaborateur) throws SQLException {
+		
+		PreparedStatement preparedStatement = null;
 		Connection connection = DBUtil.getConnection();
-		PreparedStatement preparedStatement = connection.prepareStatement(INSERT_COLLAB_SQL);
+		preparedStatement = connection.prepareStatement(INSERT_COLLAB_SQL);
 		preparedStatement.setString(1, collaborateur.getNom());
 		preparedStatement.setString(2, collaborateur.getMail());
 		preparedStatement.setString(3, collaborateur.getMdp());
 		preparedStatement.setBoolean(4, true);
 		preparedStatement.executeUpdate();
-		connection.close();
+		
+		preparedStatement.close();
+		
 	}
 
 	private final String SELECT_ALL_COLLAB = "SELECT * FROM collaborateur ";
 
 	public List<Collaborateur> selectAllCollab() throws SQLException {
-		System.out.println("selectAllCollab1");
 		List<Collaborateur> Collaborateur = new ArrayList<Collaborateur>();
+		PreparedStatement preparedStatement = null;
 		Connection connection = DBUtil.getConnection();
-		PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_COLLAB);
-		System.out.println(SELECT_ALL_COLLAB);
+		preparedStatement = connection.prepareStatement(SELECT_ALL_COLLAB);
 		ResultSet rs =  preparedStatement.executeQuery();
-		System.out.println(rs);
 
 		while (rs.next()) {
 			int id = rs.getInt("id");
@@ -63,11 +64,10 @@ public class CollaborateurDAO {
 			Boolean type = rs.getBoolean("type");
 
 			Collaborateur.add(new Collaborateur(id, nom, mail, mdp, type));
-			System.out.println(id+" "+nom+" "+mail+" "+mdp+" "+type);
-
 		}
+		preparedStatement.close();
 		rs.close();
-		System.out.println(Collaborateur);
+		
 		return Collaborateur;
 	}
 
@@ -76,37 +76,44 @@ public class CollaborateurDAO {
 	public boolean deleteCollab(String nomCollab) throws SQLException {
 		boolean rowDeleted;
 		Connection connection = DBUtil.getConnection();
-		PreparedStatement statement = connection.prepareStatement(DELETE_COLLAB_SQL);
-		statement.setString(1, nomCollab);
-		rowDeleted = statement.executeUpdate() > 0;
+		PreparedStatement preparedStatement = null;
+		preparedStatement = connection.prepareStatement(DELETE_COLLAB_SQL);
+		preparedStatement.setString(1, nomCollab);
+		rowDeleted = preparedStatement.executeUpdate() > 0;
+		
+		preparedStatement.close();
+		
 		return rowDeleted;
 	}
 
-	private final String UPDATE_COLLAB_SQL = "UPDATE collaborateur SET nom = ?,mail =? ,mdp =?, type = ?WHERE id = ?;";
+	private final String UPDATE_COLLAB_SQL = "UPDATE collaborateur SET nom = ?,mail =? ,mdp =?, type = ? WHERE id = ?;";
 
 	public boolean updateCollab(Collaborateur Collaborateur) throws SQLException {
 		boolean rowUpdated;
 		Connection connection = DBUtil.getConnection();
-		PreparedStatement statement = connection.prepareStatement(UPDATE_COLLAB_SQL);
-		statement.setString(1, Collaborateur.getNom());
-		statement.setString(2, Collaborateur.getMail());
-		statement.setString(3, Collaborateur.getMdp());
-		statement.setBoolean(4, Collaborateur.getType());
+		PreparedStatement preparedStatement = null;
+		preparedStatement = connection.prepareStatement(UPDATE_COLLAB_SQL);
+		preparedStatement.setString(1, Collaborateur.getNom());
+		preparedStatement.setString(2, Collaborateur.getMail());
+		preparedStatement.setString(3, Collaborateur.getMdp());
+		preparedStatement.setBoolean(4, Collaborateur.getType());
 
-		statement.setInt(5, Collaborateur.getId());
-		rowUpdated = statement.executeUpdate() > 0;
+		preparedStatement.setInt(5, Collaborateur.getId());
+		rowUpdated = preparedStatement.executeUpdate() > 0;
+		
+		preparedStatement.close();
+		
 		return rowUpdated;
 
 	}
 
 	private final String CONNEXION = "SELECT id,nom,mail,mdp,type FROM collaborateur WHERE mail=?";
 
-	public Collaborateur ConnectCollab(String mail) {
-		
-		
+	public Collaborateur ConnectCollab(String mail)throws SQLException {
+		PreparedStatement preparedStatement = null;
 		Collaborateur Collaborateur = null;
-		try (Connection connection = DBUtil.getConnection();
-				PreparedStatement preparedStatement = connection.prepareStatement(CONNEXION)) {
+		Connection connection = DBUtil.getConnection();
+		 preparedStatement = connection.prepareStatement(CONNEXION);
 			preparedStatement.setString(1, mail);
 			ResultSet rs = preparedStatement.executeQuery();
 			while (rs.next()) {
@@ -117,13 +124,12 @@ public class CollaborateurDAO {
 				Boolean type = rs.getBoolean("type");
 				Collaborateur = new Collaborateur(id, nom, mailRs, mdp, type);
 			}
+	
+			preparedStatement.close();
 			rs.close();
-			connection.close();
-
-		} catch (SQLException e) {
-			System.out.println(e);
-		}
 		return Collaborateur;
 	}
+	
+	
 
 }

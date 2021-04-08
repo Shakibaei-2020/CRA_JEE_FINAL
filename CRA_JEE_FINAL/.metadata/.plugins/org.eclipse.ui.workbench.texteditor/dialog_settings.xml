@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="date"/>
+		<item key="selection" value="doG"/>
 		<list key="findhistory">
+			<item value="doG"/>
+			<item value="do"/>
+			<item value="raison"/>
+			<item value="date"/>
+			<item value="System"/>
+			<item value="&#x09;&#x09;&#x09;&#x09;System.out.println(dateInparsed);"/>
+			<item value="Sustem"/>
+			<item value="pase"/>
+			<item value="parse"/>
 			<item value="dateFrais"/>
 			<item value="prixFrais"/>
 			<item value="raisonFrais"/>
 			<item value="idFrais"/>
 			<item value="rs"/>
 			<item value="connection"/>
-			<item value="connection.close"/>
-			<item value="request"/>
-			<item value="response"/>
-			<item value="close"/>
-			<item value="Parse"/>
-			<item value="selectAllCollab"/>
-			<item value="&#x09;        return Collaborateur;"/>
-			<item value="Coll"/>
-			<item value="Collab"/>
 		</list>
 		<list key="replacehistory">
 			<item value="date"/>

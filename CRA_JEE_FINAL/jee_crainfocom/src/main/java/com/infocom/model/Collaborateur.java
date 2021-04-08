@@ -1,6 +1,5 @@
 package com.infocom.model;
 
-import java.sql.SQLException;
 
 
 public class Collaborateur{
@@ -65,5 +64,10 @@ public class Collaborateur{
 	 public boolean setInterne() {
 		 return this.type = false;
 	 }
+
+	@Override
+	public String toString() {
+		return "Collaborateur [id=" + id + ", nom=" + nom + ", mail=" + mail + ", mdp=" + mdp + ", type=" + type + "]";
+	}
 	
 }

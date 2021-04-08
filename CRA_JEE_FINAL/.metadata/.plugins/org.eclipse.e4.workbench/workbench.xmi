@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_gEJJwYi4Eeu518FG4Ec5vQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_gEJJwoi4Eeu518FG4Ec5vQ" bindingContexts="_gEJJy4i4Eeu518FG4Ec5vQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ControleInterneGestionFrais.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleInterneGestionFrais.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleInterneGestionFrais.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;AccueilInterne.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/AccueilInterne.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/AccueilInterne.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;AccueilAdmin.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/AccueilAdmin.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/AccueilAdmin.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ControleAdminGestionFrais.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionFrais.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionFrais.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ControleAdminGestionCollab.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionCollab.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionCollab.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;PageAdminGestionCollab.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionCollab.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionCollab.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;PageAdminGestionFrais.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionFrais.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionFrais.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;accueil.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/accueil.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/accueil.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ControleConnexion.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleConnexion.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleConnexion.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NoteDeFraisDAO.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/model/DAO/NoteDeFraisDAO.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/java/com/infocom/model/DAO/NoteDeFraisDAO.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ControleAdminGestionFrais.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionFrais.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionFrais.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ControleInterneGestionFrais.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleInterneGestionFrais.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleInterneGestionFrais.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NoteDeFraisDAO.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/model/DAO/NoteDeFraisDAO.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/java/com/infocom/model/DAO/NoteDeFraisDAO.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CollaborateurDAO.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/model/DAO/CollaborateurDAO.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/java/com/infocom/model/DAO/CollaborateurDAO.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;PageAdminGestionFrais.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionFrais.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionFrais.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;PageAdminGestionCollab.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionCollab.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionCollab.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;AccueilInterne.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/AccueilInterne.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/AccueilInterne.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ControleAdminGestionCollab.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionCollab.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionCollab.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ControleConnexion.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleConnexion.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleConnexion.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Collaborateur.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/model/Collaborateur.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/jee_crainfocom/src/main/java/com/infocom/model/Collaborateur.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_gEJJwoi4Eeu518FG4Ec5vQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_g3TFAoi4Eeu518FG4Ec5vQ" label="%trimmedwindow.label.eclipseSDK" x="3844" y="-11" width="1025" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_gEJJwoi4Eeu518FG4Ec5vQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_g3TFAoi4Eeu518FG4Ec5vQ" label="%trimmedwindow.label.eclipseSDK" x="4019" y="-11" width="1025" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -75,7 +75,7 @@
           <tags>persp.newWizSC:org.eclipse.jpt.jpa.ui.wizard.newJpaProject</tags>
           <tags>persp.perspSC:org.eclipse.jpt.ui.jpaPerspective</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_hiZ3goi4Eeu518FG4Ec5vQ" selectedElement="_hiaek4i4Eeu518FG4Ec5vQ" horizontal="true">
-            <children xsi:type="basic:PartStack" xmi:id="_hiZ3g4i4Eeu518FG4Ec5vQ" elementId="topLeft" containerData="2672" selectedElement="_hiZ3hIi4Eeu518FG4Ec5vQ">
+            <children xsi:type="basic:PartStack" xmi:id="_hiZ3g4i4Eeu518FG4Ec5vQ" elementId="topLeft" containerData="2122" selectedElement="_hiZ3hIi4Eeu518FG4Ec5vQ">
               <children xsi:type="advanced:Placeholder" xmi:id="_hiZ3hIi4Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_hbKnEIi4Eeu518FG4Ec5vQ" closeable="true">
                 <tags>View</tags>
                 <tags>categoryTag:General</tags>
@@ -93,10 +93,10 @@
                 <tags>categoryTag:Java Browsing</tags>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_hiaek4i4Eeu518FG4Ec5vQ" containerData="7328" selectedElement="_yYliUI4aEeu6drzeJ1Z31w" horizontal="true">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_yYliUI4aEeu6drzeJ1Z31w" containerData="5000" selectedElement="_hiaelIi4Eeu518FG4Ec5vQ">
-                <children xsi:type="advanced:Placeholder" xmi:id="_hiaelIi4Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.editorss" containerData="5000" ref="_hbD5YIi4Eeu518FG4Ec5vQ"/>
-                <children xsi:type="basic:PartStack" xmi:id="_hiaemYi4Eeu518FG4Ec5vQ" elementId="bottomRight" containerData="3194" selectedElement="_hiaeoYi4Eeu518FG4Ec5vQ">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_hiaek4i4Eeu518FG4Ec5vQ" containerData="7878" selectedElement="_GOVkUJhZEeuBFef-s2Bf3g" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_GOVkUJhZEeuBFef-s2Bf3g" containerData="5291" selectedElement="_hiaelIi4Eeu518FG4Ec5vQ">
+                <children xsi:type="advanced:Placeholder" xmi:id="_hiaelIi4Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.editorss" containerData="7497" ref="_hbD5YIi4Eeu518FG4Ec5vQ"/>
+                <children xsi:type="basic:PartStack" xmi:id="_hiaemYi4Eeu518FG4Ec5vQ" elementId="bottomRight" containerData="2503" selectedElement="_hiaeoYi4Eeu518FG4Ec5vQ">
                   <children xsi:type="advanced:Placeholder" xmi:id="_hiaemoi4Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.views.AllMarkersView" ref="_hiSiwIi4Eeu518FG4Ec5vQ" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
@@ -133,7 +133,7 @@
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
                   </children>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_hiaepIi4Eeu518FG4Ec5vQ" elementId="org.eclipse.search.ui.views.SearchView" toBeRendered="false" ref="_hiU_AYi4Eeu518FG4Ec5vQ" closeable="true">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_hiaepIi4Eeu518FG4Ec5vQ" elementId="org.eclipse.search.ui.views.SearchView" ref="_hiU_AYi4Eeu518FG4Ec5vQ" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
                   </children>
@@ -143,7 +143,8 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_hiaelYi4Eeu518FG4Ec5vQ" elementId="topRight" containerData="1252" selectedElement="_hiael4i4Eeu518FG4Ec5vQ">
+              <children xsi:type="basic:PartStack" xmi:id="_hiaelYi4Eeu518FG4Ec5vQ" elementId="topRight" containerData="961" selectedElement="_NdImIZiBEeuBFef-s2Bf3g">
+                <tags>Terminal</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_hiaeloi4Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.views.ContentOutline" ref="_hiU_Aoi4Eeu518FG4Ec5vQ" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -155,6 +156,10 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_hiaemIi4Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.views.minimap.MinimapView" toBeRendered="false" ref="_hiZ3gIi4Eeu518FG4Ec5vQ" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_NdImIZiBEeuBFef-s2Bf3g" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView" ref="_NdImIJiBEeuBFef-s2Bf3g" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:Terminal</tags>
                 </children>
               </children>
             </children>
@@ -207,95 +212,35 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_hbD5YIi4Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.editorss" selectedElement="_hbD5YYi4Eeu518FG4Ec5vQ">
-      <children xsi:type="basic:PartStack" xmi:id="_hbD5YYi4Eeu518FG4Ec5vQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_2s1QkJO-Eeuwm5eUJOVEOQ">
+      <children xsi:type="basic:PartStack" xmi:id="_hbD5YYi4Eeu518FG4Ec5vQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_fpJqoJiBEeuBFef-s2Bf3g">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_xEHVkJOzEeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ControleAdminGestionCollab.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ControleAdminGestionCollab.java&quot; partName=&quot;ControleAdminGestionCollab.java&quot; title=&quot;ControleAdminGestionCollab.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionCollab.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionCollab.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;5&quot; selectionOffset=&quot;2951&quot; selectionTopPixel=&quot;1921&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_ThbD0JiBEeuBFef-s2Bf3g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CollaborateurDAO.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CollaborateurDAO.java&quot; partName=&quot;CollaborateurDAO.java&quot; title=&quot;CollaborateurDAO.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/model/DAO/CollaborateurDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/java/com/infocom/model/DAO/CollaborateurDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;1311&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_GrDBwJO0Eeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ControleAdminGestionFrais.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ControleAdminGestionFrais.java&quot; partName=&quot;ControleAdminGestionFrais.java&quot; title=&quot;ControleAdminGestionFrais.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionFrais.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionFrais.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;589&quot; selectionOffset=&quot;2486&quot; selectionTopPixel=&quot;1691&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_UAJnMJiBEeuBFef-s2Bf3g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="NoteDeFraisDAO.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NoteDeFraisDAO.java&quot; partName=&quot;NoteDeFraisDAO.java&quot; title=&quot;NoteDeFraisDAO.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/model/DAO/NoteDeFraisDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/java/com/infocom/model/DAO/NoteDeFraisDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3612&quot; selectionTopPixel=&quot;1665&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_ai1rkJO0Eeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CollaborateurDAO.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CollaborateurDAO.java&quot; partName=&quot;CollaborateurDAO.java&quot; title=&quot;CollaborateurDAO.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/model/DAO/CollaborateurDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/java/com/infocom/model/DAO/CollaborateurDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2749&quot; selectionTopPixel=&quot;1162&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_3GocMJO0Eeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ControleConnexion.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ControleConnexion.java&quot; partName=&quot;ControleConnexion.java&quot; title=&quot;ControleConnexion.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleConnexion.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleConnexion.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;334&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_MJqxIJO1Eeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Collaborateur.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Collaborateur.java&quot; partName=&quot;Collaborateur.java&quot; title=&quot;Collaborateur.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/model/Collaborateur.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/java/com/infocom/model/Collaborateur.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_XXAzUJO1Eeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="NoteDeFrais.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NoteDeFrais.java&quot; partName=&quot;NoteDeFrais.java&quot; title=&quot;NoteDeFrais.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/model/NoteDeFrais.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/java/com/infocom/model/NoteDeFrais.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;381&quot; selectionTopPixel=&quot;46&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_ZtHvEJO1Eeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="NoteDeFraisDAO.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NoteDeFraisDAO.java&quot; partName=&quot;NoteDeFraisDAO.java&quot; title=&quot;NoteDeFraisDAO.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/model/DAO/NoteDeFraisDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/java/com/infocom/model/DAO/NoteDeFraisDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2986&quot; selectionTopPixel=&quot;58&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_czsecJO1Eeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PageAdminGestionFrais.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;PageAdminGestionFrais.jsp&quot; partName=&quot;PageAdminGestionFrais.jsp&quot; title=&quot;PageAdminGestionFrais.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionFrais.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionFrais.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;853&quot; selectionTopPixel=&quot;426&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_UYh-EJO3Eeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PageAdminGestionCollab.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;PageAdminGestionCollab.jsp&quot; partName=&quot;PageAdminGestionCollab.jsp&quot; title=&quot;PageAdminGestionCollab.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionCollab.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionCollab.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;492&quot; selectionOffset=&quot;319&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_Z5rdAJO4Eeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="AccueilAdmin.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;AccueilAdmin.jsp&quot; partName=&quot;AccueilAdmin.jsp&quot; title=&quot;AccueilAdmin.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/AccueilAdmin.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/AccueilAdmin.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;26&quot; selectionOffset=&quot;261&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_2BSLcJO5Eeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Controle1Collab.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Controle1Collab.java&quot; partName=&quot;Controle1Collab.java&quot; title=&quot;Controle1Collab.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/Controle1Collab.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/Controle1Collab.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;690&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_mMTS8JO9Eeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="AccueilInterne.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;AccueilInterne.jsp&quot; partName=&quot;AccueilInterne.jsp&quot; title=&quot;AccueilInterne.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/AccueilInterne.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/AccueilInterne.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;27&quot; selectionOffset=&quot;274&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_XRiuYJO-Eeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="accueil.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;accueil.jsp&quot; partName=&quot;accueil.jsp&quot; title=&quot;accueil.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/accueil.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/accueil.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;466&quot; selectionOffset=&quot;277&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_2s1QkJO-Eeuwm5eUJOVEOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ControleInterneGestionFrais.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ControleInterneGestionFrais.java&quot; partName=&quot;ControleInterneGestionFrais.java&quot; title=&quot;ControleInterneGestionFrais.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleInterneGestionFrais.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleInterneGestionFrais.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;27&quot; selectionOffset=&quot;619&quot; selectionTopPixel=&quot;230&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_fpJqoJiBEeuBFef-s2Bf3g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ControleAdminGestionFrais.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ControleAdminGestionFrais.java&quot; partName=&quot;ControleAdminGestionFrais.java&quot; title=&quot;ControleAdminGestionFrais.java&quot; tooltip=&quot;jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionFrais.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/java/com/infocom/controller/Collaborateur/ControleAdminGestionFrais.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3330&quot; selectionTopPixel=&quot;1582&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_qivDUJiBEeuBFef-s2Bf3g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PageAdminGestionFrais.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;PageAdminGestionFrais.jsp&quot; partName=&quot;PageAdminGestionFrais.jsp&quot; title=&quot;PageAdminGestionFrais.jsp&quot; tooltip=&quot;jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionFrais.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/jee_crainfocom/src/main/webapp/WEB-INF/PageAdminGestionFrais.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;207&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
         </children>
       </children>
     </sharedElements>
@@ -365,6 +310,7 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Server</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_r7PosIi6Eeu518FG4Ec5vQ" elementId="org.eclipse.wst.server.ui.ServersView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -428,8 +374,14 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_hiU_AYi4Eeu518FG4Ec5vQ" elementId="org.eclipse.search.ui.views.SearchView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Search" iconURI="platform:/plugin/org.eclipse.search/icons/full/eview16/searchres.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.search2.internal.ui.SearchView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.search"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view isPinned=&quot;false&quot;>&#xD;&#xA;&lt;view IMemento.internal.id=&quot;org.eclipse.jdt.ui.JavaSearchResultPage&quot; org.eclipse.jdt.search.resultpage.grouping=&quot;4&quot; org.eclipse.jdt.search.resultpage.limit=&quot;1000&quot; org.eclipse.jdt.search.resultpage.limit_enabled=&quot;TRUE&quot; org.eclipse.jdt.search.resultpage.sorting=&quot;1&quot; org.eclipse.search.lastActivation=&quot;1&quot; org.eclipse.search.resultpage.layout=&quot;2&quot;/>&#xD;&#xA;&lt;view IMemento.internal.id=&quot;&quot; org.eclipse.search.lastActivation=&quot;0&quot;/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <menus xmi:id="_IdSPgJhWEeuBFef-s2Bf3g" elementId="org.eclipse.search.ui.views.SearchView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_IdSPgZhWEeuBFef-s2Bf3g" elementId="org.eclipse.search.ui.views.SearchView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_hiU_Aoi4Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.views.ContentOutline" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Outline" iconURI="platform:/plugin/org.eclipse.ui.views/icons/full/eview16/outline_co.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.views.contentoutline.ContentOutline"/>
@@ -453,13 +405,25 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_IZNXkY1wEeujJ43t33-N5Q" elementId="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+      <toolbar xmi:id="_IZNXkY1wEeujJ43t33-N5Q" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_hiZ3gIi4Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.views.minimap.MinimapView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Minimap" iconURI="platform:/plugin/org.eclipse.ui.workbench.texteditor/icons/full/eview16/minimap.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.views.minimap.MinimapView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.workbench.texteditor"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_NdImIJiBEeuBFef-s2Bf3g" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Terminal" iconURI="platform:/plugin/org.eclipse.tm.terminal.view.ui/icons/eview16/terminal_view.gif" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.tm.terminal.view.ui"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.tm.terminal.view.ui.view.TerminalsView"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view>&#xD;&#xA;&lt;terminalConnections id=&quot;org.eclipse.tm.terminal.view.ui.TerminalsView&quot;>&#xD;&#xA;&lt;connection delegateId=&quot;org.eclipse.tm.terminal.connector.local.launcher.local&quot; encoding=&quot;UTF-8&quot; terminal.forceNew=&quot;true&quot;/>&#xD;&#xA;&lt;/terminalConnections>&#xD;&#xA;&lt;/view>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Terminal</tags>
+      <menus xmi:id="_NdNeoJiBEeuBFef-s2Bf3g" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_NdNeoZiBEeuBFef-s2Bf3g" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView"/>
     </sharedElements>
     <trimBars xmi:id="_gEJJw4i4Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.platform">
       <children xsi:type="menu:ToolBar" xmi:id="_hVrDEIi4Eeu518FG4Ec5vQ" elementId="group.file" toBeRendered="false">
@@ -468,7 +432,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hVrqIIi4Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_MXjUkJOTEeuwm5eUJOVEOQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_gGWw4Ii4Eeu518FG4Ec5vQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_KRqdwJiDEeuhi8hjVZHG0Q" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_gGWw4Ii4Eeu518FG4Ec5vQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hVrqIYi4Eeu518FG4Ec5vQ" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -490,7 +454,7 @@
       <children xsi:type="menu:ToolBar" xmi:id="_hkKLAIi4Eeu518FG4Ec5vQ" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_x2VjkIi5Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
+      <children xsi:type="menu:ToolBar" xmi:id="_x2VjkIi5Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hjs4AIi4Eeu518FG4Ec5vQ" elementId="org.eclipse.wst.server.ui.internal.webbrowser.actionSet">
@@ -505,7 +469,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hVsRMIi4Eeu518FG4Ec5vQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_MXnmAJOTEeuwm5eUJOVEOQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_gGWwh4i4Eeu518FG4Ec5vQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_KRuvMJiDEeuhi8hjVZHG0Q" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_gGWwh4i4Eeu518FG4Ec5vQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hVsRMYi4Eeu518FG4Ec5vQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

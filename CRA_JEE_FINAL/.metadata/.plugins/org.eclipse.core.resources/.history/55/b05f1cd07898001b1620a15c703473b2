@@ -1,0 +1,95 @@
+package com.infocom.controller.Collaborateur;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.infocom.model.Collaborateur;
+import com.infocom.model.NoteDeFrais;
+import com.infocom.model.DAO.CollaborateurDAO;
+import com.infocom.model.DAO.NoteDeFraisDAO;
+
+
+@WebServlet("/ControleInterneGestionFrais")
+public class ControleInterneGestionFrais extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+   
+    public ControleInterneGestionFrais() {
+        super();
+    }
+
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+        this.getServletContext().getRequestDispatcher("/WEB-INF/AccueilInterne.jsp").forward(request, response);
+	}
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+
+		String buttonClicked = request.getParameter("button_clicked");
+	
+		if(buttonClicked != null) {
+		switch(buttonClicked) {
+		case "ajoutFrais":
+			
+			System.out.println("ajoutFrais");
+			String raisonIn =request.getParameter("raisonIn");
+	        Double prixIn = Double.parseDouble(request.getParameter("prixIn"));
+	        String dateIn = request.getParameter("dateIn");
+	        int idIn = Integer.parseInt(request.getParameter("idIn")); 
+
+	        
+	        SimpleDateFormat format = new SimpleDateFormat("dd-mm-yyyy");
+	        
+	      
+			java.sql.Date dateInparsed = null;
+			
+			try {
+				dateInparsed = (java.sql.Date) format.parse(dateIn);
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+			
+				System.out.println(dateInparsed);
+
+				 NoteDeFrais patrick = new NoteDeFrais(5,raisonIn,prixIn,dateInparsed, idIn);
+			     NoteDeFraisDAO patrickDAO = new NoteDeFraisDAO();
+			   
+				
+			try {
+				patrickDAO.insertFrais(patrick);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			     
+			     this.doGet(request, response);
+			     return;
+
+						
+	 
+			
+		}
+		
+		
+
+		
+        
+		}
+				
+		        this.getServletContext().getRequestDispatcher("/WEB-INF/AccueilInterne.jsp").forward(request, response);
+
+				
+	}
+
+}

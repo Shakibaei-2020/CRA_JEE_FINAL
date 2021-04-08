@@ -1,20 +1,16 @@
 package com.infocom.controller.Collaborateur;
-
 import java.io.IOException;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.sql.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.infocom.model.Collaborateur;
 import com.infocom.model.NoteDeFrais;
-import com.infocom.model.DAO.CollaborateurDAO;
 import com.infocom.model.DAO.NoteDeFraisDAO;
 
 
@@ -27,6 +23,7 @@ public class ControleInterneGestionFrais extends HttpServlet {
     }
 
 
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
         this.getServletContext().getRequestDispatcher("/WEB-INF/AccueilInterne.jsp").forward(request, response);
@@ -35,42 +32,37 @@ public class ControleInterneGestionFrais extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String raisonIn =request.getParameter("raisonIn");
-        double prixIn = Double.parseDouble(request.getParameter("prixIn"));
-        String dateIn = request.getParameter("dateIn");
-        
-        request.setAttribute("raisonIn", raisonIn);
-        request.setAttribute("prixIn", prixIn);
-        request.setAttribute("dateIn", dateIn);
-        
-        
+
+		String buttonClicked = request.getParameter("button_clicked");
 	
-		 SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
-	        Date parsed = null;
+		if(buttonClicked != null) {
+		switch(buttonClicked) {
+		case "ajoutFrais":
+			
+			String raisonIn =request.getParameter("raisonIn");
+	        Double prixIn = Double.parseDouble(request.getParameter("prixIn"));
+	        String dateIn = request.getParameter("dateIn");
+	        int idIn = Integer.parseInt(request.getParameter("idIn")); 
+
+	        Date date=Date.valueOf(dateIn);
+
+	        NoteDeFrais noteDeFrais = new NoteDeFrais(5,raisonIn,prixIn,date, idIn);
+	        NoteDeFraisDAO noteDeFraisDAO = new NoteDeFraisDAO();
+			     
 			try {
-				parsed = format.parse(dateIn);
-			} catch (ParseException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
+				noteDeFraisDAO.insertFrais(noteDeFrais);
+			} catch (SQLException e) {
+				e.printStackTrace();
 			}
-	        
+				
+	
+			     this.doGet(request, response);
+			     return;			
+			}
 		
-	        NoteDeFrais patrick = new NoteDeFrais(5,raisonIn,prixIn,parsed);
-	        NoteDeFraisDAO patrickDAO = new NoteDeFraisDAO();
-
-				try {
-					patrickDAO.insertFrais(patrick);
-					this.doGet(request, response);
-			        return;
-
-				} catch (SQLException e) {
-					e.printStackTrace();
-
-				} 
+	}
 				
-		        this.getServletContext().getRequestDispatcher("/WEB-INF/AccueilInterne.jsp").forward(request, response);
-
-				
+		        this.getServletContext().getRequestDispatcher("/WEB-INF/AccueilInterne.jsp").forward(request, response);		
 	}
 
 }

@@ -1,0 +1,147 @@
+package com.infocom.controller.Collaborateur;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.infocom.model.Collaborateur;
+import com.infocom.model.NoteDeFrais;
+import com.infocom.model.DAO.CollaborateurDAO;
+import com.infocom.model.DAO.NoteDeFraisDAO;
+
+
+@WebServlet("/ControleAdminGestionFrais")
+public class ControleAdminGestionFrais extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
+    public ControleAdminGestionFrais() {
+        super();
+    }
+
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		NoteDeFraisDAO p1 = new NoteDeFraisDAO();
+		List<NoteDeFrais> tabNoteDeFrais = new ArrayList(); 
+		
+		try {
+			tabNoteDeFrais = p1.selectAllFrais();
+		} catch (SQLException e) {
+		e.printStackTrace();
+		}
+		
+		request.setAttribute("tabNoteDeFrais",tabNoteDeFrais);
+		ArrayList<String> tabRaisonFrais = new ArrayList<String>(); 
+		for (int i = 0; i < tabNoteDeFrais.size(); i++) {
+			tabRaisonFrais.add(tabNoteDeFrais.get(i).getRaison());	
+		}
+		request.setAttribute("tabRaisonFrais",tabRaisonFrais);
+		
+		
+        this.getServletContext().getRequestDispatcher("/WEB-INF/PageAdminGestionFrais.jsp").forward(request, response);
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String buttonClicked = request.getParameter("button_clicked");
+		
+		switch(buttonClicked) {
+		case"supprimerCollab":
+			
+			String saisiRaison = request.getParameter("saisiRaison");
+			request.setAttribute("saisiRaison",saisiRaison);
+			
+	         CollaborateurDAO d = new CollaborateurDAO();
+	         NoteDeFraisDAO p = new NoteDeFraisDAO();   
+	         
+	        try {
+				p.deleteFrais(saisiRaison);
+				this.doGet(request, response);
+				return;
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} 
+	        
+		case"updateCollab":
+		case"showCollab":
+	        String idSho = request.getParameter("idSho");
+	        int idShoInt = Integer.parseInt(idSho);
+	        
+	        
+			NoteDeFraisDAO p1 = new NoteDeFraisDAO();
+			List < NoteDeFrais > tabNot = new ArrayList <NoteDeFrais>(); 
+			
+			
+			try {
+				tabNot = p1.selectFraisCollab(idShoInt);
+			} catch (SQLException e) {
+			e.printStackTrace();
+			}
+			request.setAttribute("tabNot",tabNot);
+		}
+
+		
+		/** SHOW FRAIS BY COLLAB **/
+	
+
+		/**
+		 * SUPPRIMER FRAIS VIA SELECT RAISON
+		 */
+		
+	
+
+
+       
+        
+        
+        String idUp = request.getParameter("idUp");
+        int idUpParsed = Integer.parseInt(idUp);
+        
+		String raisonUp =request.getParameter("raisonUp");
+        
+        String prixUp = request.getParameter("prixUp");
+        Double prixUpParsed = Double.parseDouble(prixUp);
+        
+        String dateUp = request.getParameter("dateUp");
+
+        
+		try {
+			Date dateUppParsed = new SimpleDateFormat("dd/MM/yyyy").parse(dateUp);
+			this.doGet(request, response);
+			return;
+		} catch (ParseException e1) {
+			e1.printStackTrace();
+		}  
+      
+        NoteDeFrais lanote = new NoteDeFrais(idUpParsed,raisonUp,PrixUpParsed,DateUppParsed, 2);
+        NoteDeFraisDAO lanoteDAO = new NoteDeFraisDAO();
+        
+        try {
+        	lanoteDAO.updateFrais(lanote);
+        	this.doGet(request, response);
+			return;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+        
+        
+        
+     
+        this.getServletContext().getRequestDispatcher("/WEB-INF/PageAdminGestionFrais.jsp").forward(request, response);
+
+	}
+
+}
